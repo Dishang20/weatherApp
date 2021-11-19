@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {{>links}}
+ <style>
+   .main_header{
+     display: flex;
+     flex-direction: column;
+   }
+ </style>
+</head>
+
+<body>
+  {{>navbar}}
+  <!-- main header -->
+  <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          <!-- left -->
+          <div class="col-md-6 col-12 main_header_right align-items-center">
+        
+            <img src="img/error.png" alt="error" class="img-fluid w-100" title="Forecast">
+            
+        </div>
+          <!-- right -->
+           <div class="col-md-6 col-12 main_header_left">
+            <p>Welcome to weather forecast</p>
+            <h1>Error <span> 404, </span>Oops! page not found</h1>
+            <a href="/home"><button>Go back</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer -->
+{{>footer}}
+</body>
+</html>
