@@ -16,7 +16,7 @@ hbs.registerPartials(partial_path);
 
 app.use(express.static(st_path));
 
-app.get('/home', (req , res) => {
+app.get('/', (req , res) => {
     res.render("index");
 });
 
